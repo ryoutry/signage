@@ -1,0 +1,173 @@
+@charset "UTF-8";
+body {
+    font-family: "メイリオ",meiryo;
+}
+
+#theme {
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #464646;
+
+    -webkit-app-region: drag;
+
+    overflow: hidden;
+
+}
+
+html {
+    -webkit-app-region: drag;
+}
+
+html, body {
+    height: 90%;
+    width:  90%;
+    margin: 30px;
+}
+
+#main_temp_outFlame {
+    width: 30%;
+    height: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 0;
+    /*border: solid 1px rgba(255, 255, 255, 0.1);*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);*/
+    /*-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);*/
+}
+
+#history_temp_outFlame {
+    width: 75%;
+    height: 30%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45%;
+    /*border: solid 1px rgba(255, 255, 255, 0.1);*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);*/
+    /*-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+
+}
+
+
+
+body, #history_temp_outFlame:before,
+#main_temp_outFlame:before{
+    background: url("../background/Theme5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#history_temp_outFlame:before,
+#main_temp_outFlame:before {
+    content: "";
+    z-index: -1;
+    filter: blur(7px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+#now_weather_icon {
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+    width: 55%;
+    height: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+}
+
+.weather_current{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+
+.weather_day{
+    display :inline-block;
+    width: 19%;
+    height:20%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#now_forecast{
+    text-align: center;
+    color: ghostwhite;
+    font-size: calc(5px + 1vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#now_temp{
+    text-align: center;
+    color: ghostwhite;
+    font-size: calc(5px + 1vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#now_humidity{
+    text-align: center;
+    color: ghostwhite;
+    font-size: calc(5px + 1vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#day_one_forecast,#day_one_temp, #day_one_humidity,
+#day_two_forecast,#day_two_temp, #day_two_humidity,
+#day_three_forecast,#day_three_temp, #day_three_humidity,
+#day_four_forecast, #day_four_temp, #day_four_humidity,
+#day_five_forecast, #day_five_temp, #day_five_humidity,
+#date_one,#date_two,#date_three, #date_four, #date_five
+{
+    text-align: center;
+    color: ghostwhite;
+    font-size: calc(2px + 1vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+#day_one_icon,#day_two_icon, #day_three_icon,
+#day_four_icon, #day_five_icon {
+    text-align: center;
+    margin-bottom: 0;
+}

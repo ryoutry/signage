@@ -1,0 +1,14 @@
+{
+  "name": "digital_signage",
+  "version": "1.0.0",
+  "description": "signage",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.2"
+  }
+}
